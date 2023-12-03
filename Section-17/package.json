@@ -1,0 +1,13 @@
+{
+  "name": "section-17",
+  "version": "1.0.0",
+  "main": "npm.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node npm.js & javac demo.java & java demo"
+  },
+  "keywords": [],
+  "author": "Anurag",
+  "license": "MIT",
+  "description": ""
+}
