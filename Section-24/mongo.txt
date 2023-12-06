@@ -1,0 +1,36 @@
+mongodb://127.0.0.1:27017
+
+//M1
+const { MongoClient } = require('mongodb');
+const url = 'mongodb://127.0.0.1:27017';
+const client = new MongoClient(url);
+
+const dbName = 'nodejs';
+
+async function main() {
+  await client.connect();
+  console.log('Connected successfully to server');
+  const db = client.db(dbName);
+  const collection = db.collection('employee');
+
+
+  return 'done.';
+}
+
+main()
+  .then(console.log)
+  .catch(console.error)
+  .finally(() => client.close());
+
+
+
+// M2
+// const { MongoClient } = require('mongodb')
+
+// // Create Instance of MongoClient for mongodb
+// const client = new MongoClient('mongodb://localhost:27017')
+
+// // Connect to database
+// client.connect()
+//     .then(() => console.log('Connected Successfully'))
+//     .catch(error => console.log('Failed to connect', error))
