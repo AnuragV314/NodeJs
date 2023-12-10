@@ -1,6 +1,6 @@
 const { error } = require('console')
 let mongoose = require('mongoose')
-let url = 'mongodb+srv://vermagup01:anurag012@cluster0.v5qhisr.mongodb.net/nodejs?retryWrites=true&w=majority'
+let url = 'mongodb+srv://vermagup01:<password>cluster0.v5qhisr.mongodb.net/nodejs?retryWrites=true&w=majority'
 
 mongoose.connect(url)
     .then(() => {
